@@ -151,9 +151,9 @@ if __name__ == "__main__":
     print("Entrees :", len(data_games))
     
     if len(data_games) >0 : 
-        afficher_legende(data_games[0])
+        afficher_legende_ligne(data_games[0])
         for i in range(0,5) :
-            afficher_data(i,data_games[i])
+            afficher_data_tabulaire(i,data_games[i])
 
     indice = int(input("Saisir indice du jeu à afficher > "))
     if indice >=0 and indice <= len(data_games) :
